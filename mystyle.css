@@ -1,12 +1,10 @@
-.tocify-subheader { /* 全部のサブヘッダーを最初から表示する*/
-    /*display: block !important;*/
-}
+
 .tocify-item {/*長いヘッダーも折り返さない*/
     white-space: nowrap;
 }
 
 body{
-  counter-reset: ref_number practice_number work_number;
+  counter-reset: ref_number practice_number work_ßnumber;
 }
 
 .float img{
@@ -126,21 +124,7 @@ h1 {
   margin-bottom: 3px;
 }
 
-/***
-.r{ 
-<<<<<<< HEAD
-　/**copy の禁止**/
-=======
-　/**copy の禁止**
->>>>>>> 4748667 (第１章の環境設定を書き込んだ)
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  -webkit-touch-callout: none;
-}
-***/
+/** テーブルの設定 **/
 
 .res_table {
   border-collapse: collapse;
