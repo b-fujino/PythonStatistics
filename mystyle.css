@@ -128,7 +128,11 @@ h1 {
 
 /***
 .r{ 
+<<<<<<< HEAD
 　/**copy の禁止**/
+=======
+　/**copy の禁止**
+>>>>>>> 4748667 (第１章の環境設定を書き込んだ)
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
