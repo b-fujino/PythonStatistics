@@ -1,23 +1,36 @@
-
-.tocify-item {/*長いヘッダーも折り返さない*/
-    white-space: nowrap;
+.tocify-item {
+  /*長いヘッダーも折り返さない*/
+  white-space: nowrap;
 }
 
-body{
+/** title **/
+.title h1 {
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+  color: #666;
+}
+.title p {
+  text-align: center;
+  font-size: 100%;
+  color: #666;
+}
+
+body {
   counter-reset: ref_number practice_number work_ßnumber;
 }
 
-.float img{
+.float img {
   /* 上右下左 */
-  /* margin: 5% 0% 0% 0% ;*/ 
+  /* margin: 5% 0% 0% 0% ;*/
   /* width : 75%; */
   margin: auto;
   display: block;
   padding: 2%;
 
-  border-radius: 8px 8px 0 0 ;
+  border-radius: 8px 8px 0 0;
   position: relative;
-  width : 60%;
+  width: 60%;
 }
 
 .float .figcaption {
@@ -27,12 +40,12 @@ body{
   font-weight: bold;
   color: #666;
   text-align: center;
-  margin:0% auto 5% auto;
+  margin: 0% auto 5% auto;
   border-bottom: solid 1px #666;
   border-left: solid 1px #666;
   border-right: solid 1px #666;
-  border-radius:0 0 8px 8px;
-  width : 60%
+  border-radius: 0 0 8px 8px;
+  width: 60%;
 }
 
 img {
@@ -41,17 +54,17 @@ img {
   border: solid 1px #666;
   border-radius: 8px;
   position: relative;
-  width : 60%;
+  width: 60%;
 }
 
 /** 画像の幅を横幅一杯に変更する場合は，<div class=WideFigure>にする．**/
-.WideFigure img{
+.WideFigure img {
   margin: auto;
   display: block;
   border: solid 1px #666;
   border-radius: 8px 8px 0 0;
   position: relative;
-  width : 100%;
+  width: 100%;
 }
 
 .WideFigure .float .figcaption {
@@ -61,23 +74,22 @@ img {
   font-weight: bold;
   color: #666;
   text-align: center;
-  margin:0% auto 5% auto;
+  margin: 0% auto 5% auto;
   border-bottom: solid 1px #666;
   border-left: solid 1px #666;
   border-right: solid 1px #666;
-  border-radius:0 0 8px 8px;
-  width : 100%
+  border-radius: 0 0 8px 8px;
+  width: 100%;
 }
-
 
 .ref {
   position: relative;
-  margin:5%;
-  padding:5px;
-  background-color: rgba(255, 255, 128, .5);
+  margin: 5%;
+  padding: 5px;
+  background-color: rgba(255, 255, 128, 0.5);
   color: #666;
 }
-.ref::before{
+.ref::before {
   counter-increment: ref_number 1;
   content: "[参考 " counter(ref_number) "]";
   font-weight: bold;
@@ -86,19 +98,18 @@ img {
 }
 
 h1 {
-  margin-top : 10px;
-  padding-top : 50px;
+  margin-top: 10px;
+  padding-top: 50px;
 }
-
 
 .practice {
   position: relative;
-  margin:5%;
-  padding:5px;
-  background-color: rgba(128, 255, 200, .5);
+  margin: 5%;
+  padding: 5px;
+  background-color: rgba(128, 255, 200, 0.5);
   color: #666;
 }
-.practice::before{
+.practice::before {
   counter-increment: practice_number 1;
   content: "[例題 " counter(practice_number) "]";
   font-weight: bold;
@@ -106,17 +117,14 @@ h1 {
   margin-bottom: 3px;
 }
 
-
-
-
 .work {
   position: relative;
-  margin:5%;
-  padding:5px;
-  background-color: rgba(128, 200, 255, .2);
+  margin: 5%;
+  padding: 5px;
+  background-color: rgba(128, 200, 255, 0.2);
   color: #666;
 }
-.work::before{
+.work::before {
   counter-increment: work_number 1;
   content: "[課題 " counter(work_number) "]";
   font-weight: bold;
@@ -158,7 +166,6 @@ h1 {
   font-size: small;
 }
 
-
 /**カスタムテーブルの設定．すべての罫線が明記される**/
 .custom-table {
   border: 2px solid #000;
@@ -169,7 +176,8 @@ h1 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.custom-table th, .custom-table td {
+.custom-table th,
+.custom-table td {
   border: 1px solid #000;
   padding: 8px;
   text-align: center;
@@ -177,7 +185,6 @@ h1 {
 .custom-table th {
   background-color: #f0f8ff;
 }
-
 
 /** リンクの書式 **/
 a {
@@ -197,3 +204,20 @@ pre code{
   border: solid 1px #888;
   border-radius: 8px;
 }*****/
+
+/***** アウトプット *****/
+.jp-OutputArea-output pre {
+  border: solid 1px #666;
+  border-radius: 8px;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  overflow-x: auto;
+  background-color: #ffff;
+}
+
+.jp-OutputArea-output::before {
+  content: "[出力]";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0px;
+}

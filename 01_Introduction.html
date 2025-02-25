@@ -7511,9 +7511,18 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration -->
 <link href="mystyle.css" rel="stylesheet"/>
-<h1>目次</h1>
+<div class="title">
+<h1>Python実行環境の整備と基本的な計算</h1>
+<p>2025-02-25</p>
+<p>藤野　秀則</p>
+</div>
+<h2 style="margin-left:20px;">目次</h2>
 <ul>
-<li><a href="#Python実行環境の整備">Python実行環境の整備</a></li>
+<li style="margin-left: 40px;"><a href="#Google Colaboratoryへのサインインとノートブック作成">Google Colaboratoryへのサインインとノートブック作成</a></li>
+<li style="margin-left: 40px;"><a href="#とりあえず実行">とりあえず実行</a></li>
+<li style="margin-left: 40px;"><a href="#ノートブックの構成">ノートブックの構成</a></li>
+<li style="margin-left: 40px;"><a href="#基本的な計算の実行">基本的な計算の実行</a></li>
+<li style="margin-left: 40px;"><a href="#モジュールと関数の利用">モジュールと関数の利用</a></li>
 </ul>
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
@@ -7523,13 +7532,35 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_title" data-mime-type="text/markdown">
+<p>% Python実行環境の整備と基本的な計算
+%% 2025-02-25
+%% 藤野　秀則</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>%title: "ドキュメントのタイトル"
-%author: "山田 太郎"
-%date: "2023-02-24"
-%description: "説明やサマリーを入れることも"</p>
-<p>本資料ではPythoでの統計分析の方法について説明していく．</p>
-<h1 id="Python%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E3%81%AE%E6%95%B4%E5%82%99">Python実行環境の整備<a class="anchor-link" href="#Python%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E3%81%AE%E6%95%B4%E5%82%99">¶</a></h1><h2 id="Google-Colaboratory%E3%81%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E4%BD%9C%E6%88%90">Google Colaboratoryへのサインインとノートブック作成<a class="anchor-link" href="#Google-Colaboratory%E3%81%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E4%BD%9C%E6%88%90">¶</a></h2><p>Pythonの開発・実行環境を最も手軽に手に入れられるのはGoogle Colaboratory（Google Colab）であろう．そこで，本資料ではGoogle Colabを用いていくことを前提とする．</p>
+<h2 id="Google-Colaboratory%E3%81%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E4%BD%9C%E6%88%90">Google Colaboratoryへのサインインとノートブック作成<a class="anchor-link" href="#Google-Colaboratory%E3%81%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E4%BD%9C%E6%88%90">¶</a></h2><p>Pythonの開発・実行環境を最も手軽に手に入れられるのはGoogle Colaboratory（Google Colab）であろう．そこで，本資料ではGoogle Colabを用いていくことを前提とする．</p>
 <p>まずは以下のリンクを開いてほしい．
 <a href="https://colab.research.google.com">Google Colab</a></p>
 <p>すると次のような画面が表示される．</p>
@@ -7621,6 +7652,27 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>極めて簡単な例であるが，pythonのプログラムが実行され，その結果が返ってきた，ということである．</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E3%81%AE%E6%A7%8B%E6%88%90">ノートブックの構成<a class="anchor-link" href="#%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E3%81%AE%E6%A7%8B%E6%88%90">¶</a></h2><p>今，Pythonのソースコードを入力した部分はコードセルと呼ばれる部分であり，</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E8%A8%88%E7%AE%97%E3%81%AE%E5%AE%9F%E8%A1%8C">基本的な計算の実行<a class="anchor-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E8%A8%88%E7%AE%97%E3%81%AE%E5%AE%9F%E8%A1%8C">¶</a></h2><p>では今度は簡単な計算を実行させてみよう．
 print()の中に数式を書き入れて，セルをCtrl+Enterもしくは▶︎で実行してみる．</p>
 </div>
@@ -7722,42 +7774,6 @@ print()の中に数式を書き入れて，セルをCtrl+Enterもしくは▶︎
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<table>
-<thead>
-<tr>
-<th>名前</th>
-<th>年齢</th>
-<th>性別</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>山田太郎</td>
-<td>25</td>
-<td>男性</td>
-</tr>
-<tr>
-<td>佐藤花子</td>
-<td>30</td>
-<td>女性</td>
-</tr>
-<tr>
-<td>鈴木一郎</td>
-<td>35</td>
-<td>男性</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>このように，<code>+</code>，<code>-</code>，<code>*</code>，<code>/</code>，<code>()</code>，<code>**</code>，<code>%%</code>などの演算記号のことを<strong>演算子(Operator)</strong>呼ぶ．演算子にはこれら以外にもいろいろある．以下にpythonで使われる代表的な演算子を示す．</p>
 </div>
 </div>
@@ -7769,24 +7785,6 @@ print()の中に数式を書き入れて，セルをCtrl+Enterもしくは▶︎
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<table>
-<thead>
-<tr>
-<th>演算子</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x + y</td>
-<td>加算</td>
-</tr>
-<tr>
-<td>x + y</td>
-<td>減算</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
@@ -7797,138 +7795,140 @@ print()の中に数式を書き入れて，セルをCtrl+Enterもしくは▶︎
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="display: flex; justify-content: space-between;">
 <table>
 <thead>
 <tr>
-<th>算術演算子</th>
-<th>説明</th>
+<th style="text-align:left">算術演算子</th>
+<th style="text-align:left">説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>x + y</code></td>
-<td>加算</td>
+<td style="text-align:left">x + y</td>
+<td style="text-align:left">加算</td>
 </tr>
 <tr>
-<td>x - y</td>
-<td>減算</td>
+<td style="text-align:left">x - y</td>
+<td style="text-align:left">減算</td>
 </tr>
 <tr>
-<td>x * y</td>
-<td>乗算</td>
+<td style="text-align:left">x * y</td>
+<td style="text-align:left">乗算</td>
 </tr>
 <tr>
-<td>x / y</td>
-<td>除算</td>
+<td style="text-align:left">x / y</td>
+<td style="text-align:left">除算</td>
 </tr>
 <tr>
-<td>x ** y</td>
-<td>累乗</td>
+<td style="text-align:left">x ** y</td>
+<td style="text-align:left">累乗</td>
 </tr>
 <tr>
-<td>x % y</td>
-<td>剰余</td>
+<td style="text-align:left">x % y</td>
+<td style="text-align:left">剰余</td>
 </tr>
 <tr>
-<td>x // y</td>
-<td>整数除算</td>
+<td style="text-align:left">x // y</td>
+<td style="text-align:left">整数除算</td>
 </tr>
 <tr>
-<td>x = y</td>
-<td>代入</td>
+<td style="text-align:left">x = y</td>
+<td style="text-align:left">代入</td>
 </tr>
 <tr>
-<td>x += y</td>
-<td>加算代入</td>
+<td style="text-align:left">x += y</td>
+<td style="text-align:left">加算代入</td>
 </tr>
 <tr>
-<td>x -= y</td>
-<td>減算代入</td>
+<td style="text-align:left">x -= y</td>
+<td style="text-align:left">減算代入</td>
 </tr>
 <tr>
-<td>x *= y</td>
-<td>乗算代入</td>
+<td style="text-align:left">x *= y</td>
+<td style="text-align:left">乗算代入</td>
 </tr>
 <tr>
-<td>x /= y</td>
-<td>除算代入</td>
+<td style="text-align:left">x /= y</td>
+<td style="text-align:left">除算代入</td>
 </tr>
 <tr>
-<td>x //= y</td>
-<td>整数除算代入</td>
+<td style="text-align:left">x //= y</td>
+<td style="text-align:left">整数除算代入</td>
 </tr>
 <tr>
-<td>x %= y</td>
-<td>剰余代入</td>
+<td style="text-align:left">x %= y</td>
+<td style="text-align:left">剰余代入</td>
 </tr>
 <tr>
-<td>x **= y</td>
-<td>累乗代入</td>
+<td style="text-align:left">x **= y</td>
+<td style="text-align:left">累乗代入</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th>比較演算子</th>
-<th>説明</th>
+<th style="text-align:left">比較演算子</th>
+<th style="text-align:left">説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>x == y</td>
-<td>等しい</td>
+<td style="text-align:left">x == y</td>
+<td style="text-align:left">等しい</td>
 </tr>
 <tr>
-<td>x != y</td>
-<td>等しくない</td>
+<td style="text-align:left">x != y</td>
+<td style="text-align:left">等しくない</td>
 </tr>
 <tr>
-<td>x &lt; y</td>
-<td>より小さい</td>
+<td style="text-align:left">x &lt; y</td>
+<td style="text-align:left">より小さい</td>
 </tr>
 <tr>
-<td>x &gt; y</td>
-<td>より大きい</td>
+<td style="text-align:left">x &gt; y</td>
+<td style="text-align:left">より大きい</td>
 </tr>
 <tr>
-<td>x &lt;= y</td>
-<td>以下</td>
+<td style="text-align:left">x &lt;= y</td>
+<td style="text-align:left">以下</td>
 </tr>
 <tr>
-<td>x &gt;= y</td>
-<td>以上</td>
+<td style="text-align:left">x &gt;= y</td>
+<td style="text-align:left">以上</td>
 </tr>
 <tr>
-<td>x &amp; y</td>
-<td>論理積 (AND)</td>
+<td style="text-align:left">x &amp; y</td>
+<td style="text-align:left">論理積 (AND)</td>
 </tr>
 <tr>
-<td>x | y</td>
-<td>論理和 (OR)</td>
+<td style="text-align:left">x | y</td>
+<td style="text-align:left">論理和 (OR)</td>
 </tr>
 <tr>
-<td>not x</td>
-<td>否定 (NOT)</td>
+<td style="text-align:left">not x</td>
+<td style="text-align:left">否定 (NOT)</td>
 </tr>
 <tr>
-<td>x is y</td>
-<td>同一オブジェクトかどうか</td>
+<td style="text-align:left">x is y</td>
+<td style="text-align:left">同一オブジェクトかどうか</td>
 </tr>
 <tr>
-<td>x is not y</td>
-<td>同一オブジェクトでないか</td>
+<td style="text-align:left">x is not y</td>
+<td style="text-align:left">同一オブジェクトでないか</td>
 </tr>
 <tr>
-<td>x in y</td>
-<td>要素が含まれるか</td>
+<td style="text-align:left">x in y</td>
+<td style="text-align:left">要素が含まれるか</td>
 </tr>
 <tr>
-<td>x not in y</td>
-<td>要素が含まれないか</td>
+<td style="text-align:left">x not in y</td>
+<td style="text-align:left">要素が含まれないか</td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 </div>
