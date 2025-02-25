@@ -184,3 +184,16 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+
+/***** ソースコード部分の書式 
+pre code{
+  font-family: monospace;
+  white-space: pre;
+  display: block;
+  margin: 1.5em 0;
+  padding: 0.5em;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+  border: solid 1px #888;
+  border-radius: 8px;
+}*****/
